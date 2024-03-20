@@ -1,0 +1,74 @@
+.card-row{
+  padding: 30px;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+
+  .card{
+    flex: 1;  
+    min-width: 300px;
+    max-width: 450px;
+    box-shadow: 0px 0px 15px 10px var(--shadow);
+    .card-head{
+       font-size: 22px;
+       font-weight: 500;
+      color: var(--black);
+      background-color: var(--white);
+ 
+    }
+    .rupees{
+      color: var(--black);
+      margin-block: 10px;
+      font-size: 16px;
+    }
+    // .ant-btn{
+    //   font-size: 16px;
+    //   font-weight: 400;
+    //   background-color: var(--blue) !important;
+    //   color: var(--white);
+    //   &:hover{
+    //     background-color: transparent!important;
+    //     color: var(--blue)!important;
+    //   }
+    // }
+  }
+  
+}
+
+:where(.css-dev-only-do-not-override-1ae8k9u).ant-modal .ant-modal-content {
+  border-radius: 0px !important;
+}
+.form-label{
+  font-weight: 600;
+}
+
+.ant-modal-header{
+ 
+  padding-bottom: 10px !important;
+  border-bottom: 1px solid #d5d4d4 !important;
+ .ant-modal-title{
+   font-size: 18px;
+   color: #8f8c8c;
+ text-transform: capitalize;
+ 
+ }
+}
+
+.ant-picker{
+  width: 100%;
+}
+.ant-btn{
+  background:  var(--blue) !important;
+  color: var(--white);
+  &:hover{
+    background-color: transparent!important;
+    color: var(--blue)!important;
+  }
+}
+.btn{
+margin-block: 20px !important;
+}

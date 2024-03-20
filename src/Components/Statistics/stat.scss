@@ -1,0 +1,74 @@
+.stat-container{
+  width: 100%;
+  min-height: 600px;
+  height: fit-content;
+  margin-bottom: 10px;
+  padding: 30px;
+  display: flex;
+  justify-content:center;
+flex-wrap: wrap;
+
+  gap: 20px;
+  .stat-card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    img{
+      width: 350px;
+      height: 350px;  
+    }
+    p{
+      font-size: 20px;
+      font-weight: 500;
+      text-transform: capitalize;
+    }
+  }
+  .financial-stat{
+    flex: 0.7;
+    min-height: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 9px var(--shadow);
+
+  }
+  .pie-chart{
+    flex: 0.3;
+    min-height: 500px;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 7px var(--shadow);
+
+
+  }
+}
+@media screen and (max-width: 1100px) {
+  .stat-container{
+    flex-direction: column;
+    gap: 20px;
+    .financial-stat{
+       width: 90%;
+      margin-inline: auto;
+     
+    }
+    .pie-chart{
+      align-self: center;
+      width: 450px;
+    
+    }
+  }
+ 
+}
+@media screen and (max-width: 900px) {
+  .stat-container{
+.financial-stat{
+  min-height: 300px !important;
+}
+.pie-chart{
+ min-height: 200px;
+ width: 400px;
+}
+  }
+}

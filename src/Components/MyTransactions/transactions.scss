@@ -1,0 +1,182 @@
+.transaction-sec {
+  width: 100%;
+  min-height: 300px;
+  padding: 10px 30px;
+
+  .trans-search-sec {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    .searchInput {
+      height: 100%;
+      flex: 0.8;
+      box-shadow: 0px 0px 10px 7px var(--shadow);
+    }
+    .ant-input {
+      padding: 5px !important;
+    }
+    :where(.css-dev-only-do-not-override-1ae8k9u).ant-input-outlined {
+      border-width: 0px;
+    }
+
+    .selectInput {
+      height: 100%;
+      flex: 0.2;
+      box-shadow: 0px 0px 10px 7px var(--shadow);
+      border-radius: 7px !important;
+    }
+    .ant-select {
+    }
+    :where(.css-dev-only-do-not-override-1ae8k9u) .ant-select-selector {
+      border: 1px solid #d9d9d9;
+      border-width: 0;
+    }
+    span.ant-select-selection-item {
+      font-weight: 500;
+      font-size: 14px;
+      color: #8f8c8c;
+    }
+  }
+  .trans-table-sec {
+    width: 100%;
+    margin-top: 25px;
+    min-height: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 7px var(--shadow);
+    .example {
+      margin: 20px 0;
+      margin-bottom: 20px;
+      padding: 30px 50px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.05);
+      border-radius: 4px;
+    }
+
+    .table-row{
+      width: 100%;
+      height: 70px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      gap: 20px;
+      padding: 10px;
+      border-bottom: 1px solid var(--shadow);
+     
+      .heading{
+        font-weight: 500;
+        font-size: 18px;
+        color: var(--black);
+      }
+
+      .ant-radio-button-wrapper{
+       
+        border-radius: 0px !important;
+        
+      }
+
+      .imp-exp-btn{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+       
+       
+      .ant-btn{
+        width: 200px;
+        padding-inline: 30px;
+      }
+      #exp-btn{
+        background-color: transparent !important;
+        color: var(--blue);
+        &:hover{
+          background-color: var(--blue) !important;
+          color: var(--white)!important;
+        }
+      }
+      .imp-label{
+        width: 200px;
+        padding: 10px 30px;
+        font-size: 14px;
+        color: var(--black);
+        border-radius: 5px;
+        background-color: var(--blue);
+        color: var(--white);
+        text-align: center;
+        &:hover{
+          background-color: transparent!important;
+          color: var(--blue)!important;
+          border: 1px solid var(--blue);
+        }
+      }
+      }
+
+    }
+   
+  }
+}
+
+@media screen and (max-width: 1100px) {
+ 
+  .table-row{
+    
+    .heading{
+      font-weight: 500 ;
+      font-size: 14px !important;
+    
+    }
+    .sort-tabs{
+      flex: 1;
+      width: 200px !important;
+      text-align: center !important;
+    }
+  
+    .ant-radio-button-wrapper{
+       
+      border-radius: 0px !important;
+    
+      span{
+     
+        font-size: 10px !important;
+        padding: 5px !important;
+      
+      }
+     
+    }
+    #exp-btn{
+      width: 100px;
+      font-size: 10px;
+    }
+    .imp-label{
+      width: 100px !important;
+      font-size: 10px !important;
+      padding: 10px !important;
+      text-align: center;
+    }
+  }
+  .ant-table-cell{
+    
+    padding: 7px !important;
+    font-size: 13px ;
+   
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .heading{
+    font-weight: 500 ;
+    font-size: 10px !important;
+    
+  
+  }
+  .ant-table-cell{
+    
+    padding: 5px !important;
+    font-size: 10px ;
+   
+  }
+ 
+}
