@@ -8,16 +8,18 @@
   flex-wrap: wrap;
   gap: 50px;
 
+
   .card{
     flex: 1;  
     min-width: 300px;
     max-width: 450px;
+    background-color:  var(--card);
+    border: none !important;
     box-shadow: 0px 0px 15px 10px var(--shadow);
     .card-head{
        font-size: 22px;
        font-weight: 500;
-      color: var(--black);
-      background-color: var(--white);
+      color: var(--black);  
  
     }
     .rupees{
@@ -25,31 +27,43 @@
       margin-block: 10px;
       font-size: 16px;
     }
-    // .ant-btn{
-    //   font-size: 16px;
-    //   font-weight: 400;
-    //   background-color: var(--blue) !important;
-    //   color: var(--white);
-    //   &:hover{
-    //     background-color: transparent!important;
-    //     color: var(--blue)!important;
-    //   }
-    // }
+    .ant-btn{
+      font-size: 16px;
+      font-weight: 400;
+      background-color: var(--blue) !important;
+      color: #fff;
+      &:hover{
+        background-color: transparent!important;
+        color: var(--blue)!important;
+      }
+    }
   }
   
 }
 
 :where(.css-dev-only-do-not-override-1ae8k9u).ant-modal .ant-modal-content {
-  border-radius: 0px !important;
+  border-radius: 10px !important;
+  background-color: var(--white);
+
+  .ant-form-item-control-input{
+    .ant-input{
+      background-color: var(--white) !important;
+    }
+  }
+  
+
 }
 .form-label{
   font-weight: 600;
+ 
 }
 
 .ant-modal-header{
  
   padding-bottom: 10px !important;
   border-bottom: 1px solid #d5d4d4 !important;
+  background-color: var(--white) !important;
+ 
  .ant-modal-title{
    font-size: 18px;
    color: #8f8c8c;
@@ -60,6 +74,8 @@
 
 .ant-picker{
   width: 100%;
+  color: var(--black) !important;
+ 
 }
 .ant-btn{
   background:  var(--blue) !important;
@@ -71,4 +87,11 @@
 }
 .btn{
 margin-block: 20px !important;
+color: #fff !important;
 }
+
+.ant-select-selection-item  {
+  color: var(--black) !important;
+  color: rgba(48, 44, 44, 0.212);
+}
+

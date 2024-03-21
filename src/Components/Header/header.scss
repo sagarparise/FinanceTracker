@@ -14,6 +14,14 @@
   h3{
     padding: 10px ;
     font-weight: 500;
+    color: #ffffff;
+  }
+  .right-of-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+ 
   }
   .logout{
     display: flex;
@@ -37,4 +45,30 @@
    }
   }
 
+}
+:where(.css-dev-only-do-not-override-1ae8k9u).ant-switch{
+  width: 50px;
+  border-radius: 10px;
+  padding: 10px !important;
+  background-color: #e1dcdc;
+}
+:where(.css-dev-only-do-not-override-1ae8k9u).ant-switch.ant-switch-checked:hover:not(.ant-switch-disabled) {
+  background: #e7e8e4; 
+}
+
+:where(.css-dev-only-do-not-override-1ae8k9u).ant-switch.ant-switch-checked {
+  background: #7c817c;
+}
+
+:where(.css-dev-only-do-not-override-1ae8k9u).ant-switch .ant-switch-handle::before {
+  position: absolute;
+  top: 0px;
+  inset-inline-end: 0;
+  bottom: 0;
+  inset-inline-start: 0;
+  background-color: #ffffff;
+  border-radius: 9px;
+  box-shadow: 0 2px 4px 0 rgba(0, 35, 11, 0.2);
+  transition: all 0.2s ease-in-out;
+  content: "";
 }

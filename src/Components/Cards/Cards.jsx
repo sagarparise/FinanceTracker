@@ -3,12 +3,13 @@ import { Card, Row, Button, Modal, Form, Input, DatePicker,Select } from "antd";
 import "./cards.scss";
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth ,db} from "../../Firebase";
-import {doc, addDoc, collection} from 'firebase/firestore'
 import { toast } from "react-toastify";
-function Cards({addTransaction, transactions}) {
+function Cards({addTransaction, transactions,collectionDelete}) {
 
   const [incomeModalOpen, setIncomeModalOpen] = useState(false);
   const [expenseModalopen, setExpenseModalOpen] = useState(false);
+
+
   const[balance, setBalance] = useState({
     currentBal: 0,
     totalIncome: 0,
@@ -51,6 +52,8 @@ const modalClose = ()=>{
   setIncomeModalOpen(false)
   setExpenseModalOpen(false)
 }
+
+
  
 
   return (
@@ -58,7 +61,7 @@ const modalClose = ()=>{
       <Card className="card">
         <p className="card-head">Current balance</p>
         <p className="rupees">₹ {balance.currentBal}</p>
-        <Button block>Reset Balance</Button>
+        <Button block onClick={collectionDelete}>Reset Balance</Button>
       </Card>
 
       <Card className="card">
@@ -130,29 +133,7 @@ function ModalForm({type, addTransaction}) {
 
   }
 
-  // const addTransaction = async(newTransaction)=>{
-
-  //   try{
-  //     const transRef = collection(db, `users/${user.uid}/transactions`)
-  //     const transDoc = await addDoc(transRef, newTransaction)
-  //     console.log('Document written with Id', transDoc.id)
-  //     toast.success('Transaction added successfully',{
-  //       position: "top-right",
-  //     })
-
-    
-
-  //     if (onTransactionAdded) {
-  //       onTransactionAdded();
-  //     }
-
-  //   }
-  //   catch(err){
-  //     console.log(err.message)
-  //     toast.error("Couldn't add transaction")
-  //   }
-
-  // }
+  
 
   const handleReset = () => {
     fmRef.current.resetFields(); // Reset the form fields

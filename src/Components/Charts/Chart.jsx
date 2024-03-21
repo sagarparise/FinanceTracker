@@ -41,9 +41,7 @@ const value =  transactions &&transactions
       {
         label: "Total Income",
         data: value,
-         
-
-        borderWidth: 2,
+        borderWidth: 3,
         fill: true,
         borderColor: "rgb(75, 192, 192)",
         tension: 0.2,
@@ -61,13 +59,19 @@ const value =  transactions &&transactions
     scales: {
       x: {
         grid: {
+          color:'#dbd3d3',
           display: false, // Hide x-axis grid lines
+        
         },
+       
       },
       y: {
         grid: {
+          color: "#302c2c36",
           display: true, // Hide y-axis grid lines
+         
         },
+       
       },
     },
   };

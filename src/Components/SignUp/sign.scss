@@ -23,20 +23,24 @@ cursor: pointer;
   align-items: center;
   .form-container{
     width: 450px;
-    min-width: 380px;
+   
     border: 1px solid var(--shadow);
     padding: 30px;
     border-radius: 20px;
-    background-color: var(--white);
+    background-color: var(--card);
     box-shadow: 0px 0px 10px 7px var(--shadow);
     .head{
       text-align: center;
       padding: 15px 10px;
       font-size: 22px;
       font-weight: 500;
+      color: var(--black);
       span{
         color: var(--blue);
       }
+    }
+    #password{
+      color: var(--black) !important;
     }
   }
 }
@@ -56,6 +60,9 @@ cursor: pointer;
       color: var(--blue)!important;
     }
   }
+  p{
+    color: var(--black)
+  }
 }
 .click{
   padding-inline: 5px;
@@ -66,17 +73,23 @@ cursor: pointer;
  margin-bottom: 10px;
  label{
    font-size: 15px !important;
+   color: var(--black) !important;
  }
 }
 .ant-input{
 padding-inline: 0px !important;
   border-radius: 0;
   border: none !important;
+  color: var(--black);
+  &::placeholder{
+    color: var(--placeholderColor) !important;
+  }
  
 
 }
 .ant-form-item-control-input{
   border-bottom: 1px solid var(--black) !important;
+
   span{
     border: none !important;
     border-radius: 0px;
@@ -84,5 +97,18 @@ padding-inline: 0px !important;
   }
   &:hover{
 border-color: var(--blue);
+  }
+}
+.ant-form-item-control-input .anticon {
+  color: var(--placeholderColor) !important;
+}
+@media screen and (max-width: 500px){
+  .main-container{
+    .form-container{
+      width: 300px;
+    }
+  }
+  .ant-btn{
+    font-size: 10px !important;
   }
 }
