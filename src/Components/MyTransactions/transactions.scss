@@ -178,11 +178,9 @@
 }
 
 .ant-empty-normal{
-  background-color: var(--card) !important;
+  background-color: transparent !important;
 }
-:where(.css-dev-only-do-not-override-1ae8k9u).ant-table-wrapper .ant-table-tbody>tr.ant-table-placeholder:hover>td{
-  background-color: var(--card) !important;
-}
+
 :where(.css-dev-only-do-not-override-1ae8k9u).ant-table-wrapper .ant-table-tbody >tr >td {
 
   background: var(--card) !important;
@@ -191,6 +189,8 @@
 .ant-empty-description{
   color: var(--placeholderColor) !important;
 }
+
+
 
 @media screen and (max-width: 1100px) {
  
