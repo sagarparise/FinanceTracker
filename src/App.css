@@ -14,6 +14,7 @@ body.light{
   --placeholderColor:#d0d0d0;
   background-color: #ffffff;
 
+
 }
 body.dark{
   --black: #ffffff;
@@ -22,6 +23,7 @@ body.dark{
   --placeholderColor:#736b6b;
   --card: #161111;
   background-color: #222121;
+
 }
 
     

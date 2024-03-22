@@ -178,10 +178,15 @@
 }
 
 .ant-empty-normal{
-  background-color: transparent !important;
+  background-color: var(--card) !important;
 }
 :where(.css-dev-only-do-not-override-1ae8k9u).ant-table-wrapper .ant-table-tbody>tr.ant-table-placeholder:hover>td{
-  background-color: transparent !important;
+  background-color: var(--card) !important;
+}
+:where(.css-dev-only-do-not-override-1ae8k9u).ant-table-wrapper .ant-table-tbody >tr >td {
+
+  background: var(--card) !important;
+
 }
 .ant-empty-description{
   color: var(--placeholderColor) !important;
