@@ -7,7 +7,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { toast } from 'react-toastify'
 import MyTransactions from '../MyTransactions/MyTransactions'
 import Stat from '../Statistics/Stat'
-import ChartComponent from '../Charts/Chart'
+
 function Dashboard() {
   const [user] = useAuthState(auth);
   const [transactions, setTransactions] = useState([])
@@ -32,10 +32,11 @@ const fetchAllTransactions = async()=>{
       transactionArray.push(doc.data());
 
     });
-    console.log(transactionArray)
+  
     setTransactions(transactionArray);
     toast.success('Transactions fetched',{
       position: "top-right",
+      theme: `${localStorage.getItem('theme')}`
     })
   }
   
@@ -51,6 +52,7 @@ const addTransaction = async(newTransaction)=>{
     console.log('Document written with Id', transDoc.id)
     toast.success('Transaction added successfully',{
       position: "top-right",
+      theme: `${localStorage.getItem('theme')}`
     })
 
   fetchAllTransactions()
@@ -58,7 +60,10 @@ const addTransaction = async(newTransaction)=>{
   }
   catch(err){
     console.log(err.message)
-    toast.error("Couldn't add transaction")
+    toast.error("Couldn't add transaction",{
+      position: "top-right",
+      theme: `${localStorage.getItem('theme')}`
+    })
   }
 
 }
@@ -81,6 +86,7 @@ const collectionDelete = async()=>{
   }
    toast.success('Reset Balance',{
      position: "top-right",
+     theme: `${localStorage.getItem('theme')}`
    })
  }
 

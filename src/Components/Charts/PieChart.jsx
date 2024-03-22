@@ -46,7 +46,7 @@ function PieChart({ transactions }) {
         }
       }
     });
-    console.log(food,office,education)
+
 
   const data = {
     labels: ["Food", "Education", "Office", "Health", "Others"],

@@ -141,6 +141,7 @@ function MyTransactions({ transactions,addTransaction }) {
           className="searchInput"
           value={isInput}
           onChange={handleBySearch}
+          variant="borderless"
           prefix={<SearchOutlined />}
         />
         <Select

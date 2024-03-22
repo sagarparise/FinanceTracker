@@ -68,6 +68,7 @@ function SignUp() {
           setLoad((prev) => ({ ...prev, emailAuth: false }));
           toast.error(`${error.message}`, {
             position: "top-right",
+            theme: `${localStorage.getItem('theme')}`
           });
 
           
@@ -75,6 +76,7 @@ function SignUp() {
       } else {
         toast.error("Password does not match!", {
           position: "top-right",
+          theme: `${localStorage.getItem('theme')}`
         });
         setTimeout(() => {
           setLoad((prev) => ({ ...prev, emailAuth: false }));
@@ -83,6 +85,7 @@ function SignUp() {
     } else {
       toast.error("Please fill all the fields!", {
         position: "top-right",
+        theme: `${localStorage.getItem('theme')}`
       });
       setTimeout(() => {
         setLoad((prev) => ({ ...prev, emailAuth: false }));
@@ -109,6 +112,7 @@ function SignUp() {
       setLoad((prev) => ({ ...prev, googleAuth: false }));
       toast.success("User created !", {
         position: "top-right",
+        theme: `${localStorage.getItem('theme')}`
       });
 
       navigate("/dashboard");
@@ -117,6 +121,7 @@ function SignUp() {
       setLoad((prev) => ({ ...prev, googleAuth: false }));
       toast.error(`${error.message}`, {
         position: "top-right",
+        theme: `${localStorage.getItem('theme')}`
       });
     }
   };

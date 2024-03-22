@@ -32,10 +32,12 @@ const logoutUser = async()=>{
     navigate("/login");
     toast.success('User logged out', {
       position: "top-right",
+      theme: `${localStorage.getItem('theme')}`
     })
   }catch(e){
     toast.error(`${e.message}`, {
       position: "top-right",
+      theme: `${localStorage.getItem('theme')}`
     })
   }
 

@@ -16,17 +16,17 @@
       flex: 0.8;
       box-shadow: 0px 0px 10px 7px var(--shadow);
     }
+
     .ant-input {
       padding: 5px !important;
-      color: var(--black)
+      color: var(--black);
       
     }
     .anticon{
       color: var(--placeholderColor) !important;
     }
-    :where(.css-dev-only-do-not-override-1ae8k9u).ant-input-outlined {
-      border-width: 0px;
-    }
+  
+
 
     .selectInput {
       height: 100%;
@@ -48,6 +48,9 @@
       color: #8f8c8c;
     }
   }
+
+ 
+
   .trans-table-sec {
     width: 100%;
     margin-top: 25px;
@@ -172,6 +175,16 @@
     color: var(--placeholderColor);
   }
   
+}
+
+.ant-empty-normal{
+  background-color: transparent !important;
+}
+:where(.css-dev-only-do-not-override-1ae8k9u).ant-table-wrapper .ant-table-tbody>tr.ant-table-placeholder:hover>td{
+  background-color: transparent !important;
+}
+.ant-empty-description{
+  color: var(--placeholderColor) !important;
 }
 
 @media screen and (max-width: 1100px) {

@@ -28,6 +28,7 @@ function Login() {
     setLoad((prev) => ({ ...prev, emailAuth: false }));
     toast.success("Logged in successfully!", {
       position: "top-right",
+      theme: `${localStorage.getItem('theme')}`
     });
   
 
@@ -40,6 +41,7 @@ function Login() {
 
     toast.error(`${error.message}`, {
       position: "top-right",
+      theme: `${localStorage.getItem('theme')}`
     });
     
 
@@ -62,6 +64,7 @@ const handleLogByGoogle = () => {
 
     toast.success("Logged in successfully !", {
       position: "top-right",
+      theme: `${localStorage.getItem('theme')}`
     });
 
     navigate('/dashboard')
@@ -73,6 +76,7 @@ const handleLogByGoogle = () => {
 
     toast.error(`Something went wrong \n ${error.message}`, {
       position: "top-right",
+      theme: `${localStorage.getItem('theme')}`
     });
   });
 

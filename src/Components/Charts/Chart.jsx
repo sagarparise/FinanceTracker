@@ -26,13 +26,13 @@ function ChartCompent({ transactions }) {
     transactions
       .filter((item) => item.type === "income")
       .map((item) => item.date);
-  console.log(labelArray);
+
 
 const value =  transactions &&transactions
   .filter((item) => item.type === "income")
   .map((item) => item.amount)
 
-  console.log(value)
+
 
   const data = {
     labels: labelArray,
