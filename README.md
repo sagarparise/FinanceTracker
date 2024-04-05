@@ -39,6 +39,6 @@ https://github.com/sagarparise/FinanceTracker
 ## Demo
 1. ![Screenshot (172)](https://github.com/sagarparise/FinanceTracker/assets/141607123/7ef05f27-7bb1-45ea-a39f-b6f87515ff82)
 2. ![Screenshot (173)](https://github.com/sagarparise/FinanceTracker/assets/141607123/da68c302-838c-4980-bbe3-f9d07a3757dc)
-3. ![Screenshot (174)](https://github.com/sagarparise/FinanceTracker/assets/141607123/2f90e2c3-9cf5-4e9d-a2aa-5b3b542f5bef)
+3. ![Screenshot (174)](https://github.com/sagarparise/FinanceTracker/assets/141607123/fba803d1-503f-4ac4-b4db-f4238f21ca53)
 4. ![Screenshot (175)](https://github.com/sagarparise/FinanceTracker/assets/141607123/874b9d20-0023-4bc4-bdfc-5190b2654418)
 
