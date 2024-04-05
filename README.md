@@ -9,7 +9,7 @@ A simple finance tracker application built with React, Ant Design, Firebase, and
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
+
 
 ## Introduction
 
