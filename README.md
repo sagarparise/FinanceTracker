@@ -33,10 +33,6 @@ Include instructions on how to install and set up the project locally. This shou
 3. Setting up Firebase configuration
 4. Running the development server
 
-Example:
-
-```bash
-git clone https://github.com/yourusername/finance-tracker-app.git
-cd finance-tracker-app
-npm install
+## Git Repository
+https://github.com/sagarparise/FinanceTracker
 
