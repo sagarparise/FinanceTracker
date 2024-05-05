@@ -90,7 +90,7 @@ const handleLogByGoogle = () => {
       
        <div className="login-form-container">
       <Form layout="vertical" className='forms' onFinish={handleForm} ref={formRef}>
-        <p className="head">Log In on <span>Financely.</span></p >
+        <p className="head">Log In on <span>Wealth Track.</span></p >
        
 
         <Form.Item

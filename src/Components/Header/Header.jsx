@@ -67,7 +67,7 @@ const themeSet = (appliedTheme)=>{
 
   return (
     <div className="header">
-      <h3>Financely .</h3>
+      <h3>Wealth Track .</h3>
       <div className="right-of-header">
       <Switch
         checked={theme === 'dark'}

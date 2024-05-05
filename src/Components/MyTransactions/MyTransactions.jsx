@@ -117,6 +117,7 @@ function MyTransactions({ transactions,addTransaction }) {
       parse(event.target.files[0], {
         header : true,
         complete: async function(results){
+          console.log(results)
           for( const transaction of results.data){
             const newTransaction = {
               ...transaction

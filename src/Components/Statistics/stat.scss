@@ -8,6 +8,7 @@
   justify-content:center;
 flex-wrap: wrap;
 
+
   gap: 20px;
   .stat-card{
     width: 100%;
@@ -66,6 +67,7 @@ flex-wrap: wrap;
 }
 @media screen and (max-width: 900px) {
   .stat-container{
+    overflow-x: scroll;
 .financial-stat{
   min-height: 300px !important;
 }

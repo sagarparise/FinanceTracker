@@ -28,8 +28,10 @@ function SignUp() {
     const confirmPassword = value.confirmPassword;
 
     if (name && email && password && confirmPassword) {
-      if (confirmPassword === password) {
+      let time = 60;
 
+      if (confirmPassword === password) {
+        
 
          try {
           const result = await createUserWithEmailAndPassword(
@@ -138,7 +140,7 @@ function SignUp() {
         <div className="form-container">
           <Form layout="vertical" onFinish={handleForm} ref={formRef}>
             <p className="head">
-              Sign Up on <span>Financely.</span>
+              Sign Up on <span>Wealth Track.</span>
             </p>
             <Form.Item label="Full Name" name="fullName">
               <Input type="text" placeholder="John Doe" variant="borderless" />

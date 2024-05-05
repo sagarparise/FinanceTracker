@@ -8,7 +8,7 @@
 body.light{
   --black: #000000;
   --white: #fff;
-  --blue: #2970ff;
+  --blue: #ff9100;   
   --shadow: #f2f2f2;
   --card: #ffffff;
   --placeholderColor:#d0d0d0;
@@ -19,7 +19,7 @@ body.light{
 body.dark{
   --black: #ffffff;
   --white: #000000;
-  --blue: #2949ff;
+  --blue: #ff9100;
   --placeholderColor:#736b6b;
   --card: #161111;
   background-color: #222121;
